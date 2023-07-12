@@ -49,15 +49,15 @@ updated: 2023-07-12
 
 
 
-![软件截图](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712130354.png)
+![软件截图](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712130354.png)
 
-![软件截图](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712130535.png)
+![软件截图](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712130535.png)
 我们这里用这个npm-cache为例子来演示如何使用
 
 
 现在C盘的剩余空间是 37.1GB
 
-![c盘空间37.1G](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712130856.png)
+![c盘空间37.1G](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712130856.png)
 
 在我执行到这方法前是100MB 🐕
 
@@ -68,19 +68,19 @@ updated: 2023-07-12
 - 创建一个符号链接在原来的文件夹到D盘的新文件夹
 
 进入到路径
-![c盘路径](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712131103.png)
+![c盘路径](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712131103.png)
 
 
 查看下文件夹的大小，确实是5GB多
-![文件大小5.78GB](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712131950.png)
+![文件大小5.78GB](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712131950.png)
 
 第一步复制
 
-![文件大小5.78GB](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712133456.png)
+![文件大小5.78GB](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712133456.png)
 
 
 第二步删除原来的
-![删除文件](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712133611.png)
+![删除文件](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712133611.png)
 
 
 第三步
@@ -90,9 +90,9 @@ updated: 2023-07-12
 ```PowerShell
 New-Item -ItemType Junction -Path "C:\Users\knight.gao\AppData\Local\npm-cache" -Target "D:\Users\knight.gao\AppData\Local\npm-cache"
 ```
-![运行结果](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712134228.png)
+![运行结果](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712134228.png)
 查看下C盘空间
-![最后结果](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%2020230712134319.png)
+![最后结果](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712134319.png)
 别忘了测试下程序的功能，理论来说是没啥影响的
 
 ### 更方便的使用
@@ -170,4 +170,4 @@ SSD与机械硬盘的差异还是要知道点的，一般来说SSD比较快，�
 
 选中下载文件夹右键属性，选中位置，选在D盘的位置也可
 
-![下载设置属性](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%20230712154338.png)
+![下载设置属性](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@main/img/Pasted%20image%2020230712154338.png)
