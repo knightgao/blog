@@ -3,7 +3,6 @@ title: 拯救C盘大行动
 date: 2023-07-12
 updated: 2023-07-12
 ---
-
 ## 简介
 
 公司电脑C盘空间不够了，但有个机械的D盘还挺大的，有没有办法拯救下C盘再抢救下尼？
@@ -98,8 +97,7 @@ New-Item -ItemType Junction -Path "C:\Users\knight.gao\AppData\Local\npm-cache" 
 
 ### 更方便的使用
 
-直接写成了脚本
-
+直接写成了脚本，只需要修改originalFolder 与 targetFolder 的路径既可，只需要改脚本的前2行代码。
 ``` PowerShell
 # 定义原始文件夹路径和目标文件夹路径
 $originalFolder = "C:\Users\knight.gao\AppData\Local\pnpm-cache"
@@ -120,7 +118,6 @@ Remove-Item -Path $originalFolder -Recurse
 # 创建链接
 New-Item -ItemType Junction -Path $originalFolder -Target $targetFolder
 ```
-
 
 脚本二 带确认版本
 
@@ -166,3 +163,11 @@ if (Test-Path $originalFolder) {
 
 SSD与机械硬盘的差异还是要知道点的，一般来说SSD比较快，机械比较慢，所以推荐进行转移的文件一定不要是经常读取的，比较合适的是下载文件夹，微信的缓存。数据无价，进行操作前一定做好备份。
 以上脚本由chatGPT提供。
+
+## 补充
+
+### 下载文件夹设置到D盘
+
+选中下载文件夹右键属性，选中位置，选在D盘的位置也可
+
+![下载设置属性](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss@master/img/Pasted%20image%20230712154338.png)
