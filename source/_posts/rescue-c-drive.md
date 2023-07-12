@@ -99,6 +99,7 @@ New-Item -ItemType Junction -Path "C:\Users\knight.gao\AppData\Local\npm-cache" 
 ### 更方便的使用
 
 直接写成了脚本
+
 ``` PowerShell
 # 定义原始文件夹路径和目标文件夹路径
 $originalFolder = "C:\Users\knight.gao\AppData\Local\pnpm-cache"
@@ -120,6 +121,8 @@ Remove-Item -Path $originalFolder -Recurse
 New-Item -ItemType Junction -Path $originalFolder -Target $targetFolder
 ```
 
+
+脚本二 带确认版本
 
 ```PowerShell
 # 定义原始文件夹路径和目标文件夹路径
