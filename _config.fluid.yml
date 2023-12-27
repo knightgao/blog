@@ -1,6 +1,8 @@
 navbar:
   blog_title: 秋晓浦前端技能分享
 index:
+  banner_img: /images/bg.jpg
+  banner_img_height: 100
   slogan:
     enable: true
 
@@ -8,7 +10,7 @@ index:
     # If empty, text based on `subtitle` in hexo config
     text: "欢迎访问，等你很久"
 about:
-  avatar: /img/avatar.png
+  avatar: /images/avatar.png
   name: "knight.gao"
   intro: "奶爸·折腾·有趣的灵魂"
   icons:
