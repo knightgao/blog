@@ -7,7 +7,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->`, 'default');
 
 hexo.extend.injector.register('body_end', `<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBG3S975"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-9DS27J1J2Y"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->`, 'default');
 
