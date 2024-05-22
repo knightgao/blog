@@ -1,10 +1,11 @@
 ---
 title: 使用vue3 实现个优雅的拖拽
 date: 2023-05-10
-updated: 2023-05-10
+updated: 2024-05-22
 ---
 
 ### 前置知识
+
 #### vue2 中常用的复用的方式
 - mixin（混入）
 - HOC
@@ -185,7 +186,7 @@ let mo: MutationObserver;
 
 最后来看下整体的效果
 
-![drag例子动图](https://img.devgaoy.cn/asserts/drag.gif)
+![drag例子动图](https://cdn.jsdelivr.net/gh/knightgao/public-img-oss/img/7dd509689d654c12a0bbb4fbbeaaf64d~tplv-k3u1fbpfcp-zoom-in-crop-mark%3A1512%3A0%3A0%3A0.awebp)
 
 以上是所有的代码（供参考）
 ```ts
