@@ -1,7 +1,7 @@
 ---
 title: 你应该知道的JS
 date: 2023-12-25
-updated: 2023-12-25
+updated: 2024-05-22
 ---
 
 ### 使用const 或者 let 替代 var
@@ -441,6 +441,30 @@ let {age,name} = getBird();
 console.log(age);
 console.log(name);
 ```
+
+
+### 解构重命名
+
+旧习惯　使用解构赋值，key 不一致
+
+```javascript
+let {age,name} = getBird();
+let birdAge = age;
+let birdName = name;
+
+console.log(birdAge); // 输出年龄，
+console.log(birdName); // 输出名字
+```
+
+// 新习惯：使用解构赋值并重命名变量
+
+```javascript
+const { age: birdAge, name: birdName } = bird;
+console.log(birdAge); // 输出年龄，变量名改为 birdAge
+console.log(birdName); // 输出名字，变量名改为 birdName
+```
+
+
 
 ### 对可选项使用解构赋值
 
