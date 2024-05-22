@@ -1,7 +1,7 @@
 ---
 title: 终端如何代理
 date: 2023-10-20
-updated: 2023-10-20
+updated: 2024-05-22
 ---
 
 
@@ -10,15 +10,23 @@ updated: 2023-10-20
 ### PowerShell
 
 ```  powershell
-$env:http_proxy="http://127.0.0.1:1081"
-$env:https_proxy="http://127.0.0.1:1081"
+$env:http_proxy="http://127.0.0.1:7890"
+$env:https_proxy="http://127.0.0.1:7890"
 ```
 
 ### CMD
 
 ``` cmd
-set http_proxy=http://127.0.0.1:1081
-set https_proxy=http://127.0.0.1:1081
+set http_proxy=http://127.0.0.1:7890
+set https_proxy=http://127.0.0.1:7890
+```
+
+### MAC
+
+``` mac
+export https_proxy=http://127.0.0.1:7890
+http_proxy=http://127.0.0.1:7890
+all_proxy=socks5://127.0.0.1:7890
 ```
 
 ### 取消代理
